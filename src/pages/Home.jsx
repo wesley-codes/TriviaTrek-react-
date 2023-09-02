@@ -48,14 +48,15 @@ export default function Home() {
           </div>
         ) : (
           <>
-            <div className="flex gap-4  justify-center">
-              <DropDown onChange={selectHandler} options={options} />
+            <div className="flex flex-col  md:flex-row  md:justify-around  gap-4 ">
+              <DropDown onChange={selectHandler} options={options} label="Select difficulty" />
               <DropDown
                 onChange={selectNumOfQuestion}
                 options={numOfQuestions}
+                label="Num of questions"
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               <CardCategoryItem
                 difficultyType={difficulty}
                 categories={categories}
