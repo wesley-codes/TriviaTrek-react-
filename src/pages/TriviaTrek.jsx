@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useParams, useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import Modal from '../components/ui/Modal/modal';
 import { getQuestion } from '../utils/Requests';
 import Button from '../components/ui/Button';
