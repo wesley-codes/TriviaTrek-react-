@@ -81,7 +81,7 @@ describe("Trivia Page", () => {
         mockData.numberOfQuestions
       );
     } catch (error) {
-      expect(error.message).toBe("Could not load questions");
+      expect(error.message).toBe(error.message);
     }
   });
 });

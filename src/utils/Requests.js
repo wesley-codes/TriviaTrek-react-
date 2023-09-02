@@ -12,7 +12,8 @@ export async function fetchCategory() {
 
     return res.json();
   } catch (error) {
-    throw new Error("Could not get categories");
+    
+    throw new Error(error.message);
   }
 }
 
@@ -37,6 +38,6 @@ export async function getQuestion(category, difficulty, number) {
       ]),
     }));
   } catch (error) {
-    throw new Error("Could not load questions");
+    throw new Error(error.message);
   }
 }

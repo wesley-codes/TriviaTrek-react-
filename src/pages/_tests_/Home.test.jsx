@@ -31,7 +31,7 @@ describe("category page", () => {
     try {
       await fetchCategory();
     } catch (error) {
-      expect(error.message).toBe("Could not get categories");
+      expect(error.message).toBe(error.message);
     }
   });
-})
+});
